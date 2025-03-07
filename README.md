@@ -1,7 +1,8 @@
 # Second BD - Project Overview
 
-## Frontend Live Link: https://second-hand-client-dc3y.vercel.app
-## Backend Live Link: https://second-hand-server-six.vercel.app
+## Frontend Live Link:
+
+## Backend Live Link:
 
 ## Introduction
 
@@ -10,7 +11,9 @@
 ## Features
 
 ### User Features
+
 - **Browse Products**: Users can view second-hand items across several product categories, including:
+
   - Electronics
   - Fashion
   - For Kids
@@ -40,6 +43,7 @@
 - **Purchase and Order Confirmation**: After purchasing a product, the product owner must confirm the transaction, ensuring a smooth purchasing process.
 
 ### Admin Features
+
 - **Admin Dashboard**: Admins can manage users and monitor all product listings, ensuring the platform runs smoothly.
 
 - **Product Management**: Admins are responsible for verifying listings, ensuring that only valid products are posted on the platform.
@@ -51,13 +55,16 @@
 To get started with **Second BD**, follow these steps:
 
 1. **Installation**:
+
    - Clone the repository to your local machine.
    - Set up the necessary environment and dependencies by following the instructions in the repository.
 
 2. **Set Up Database**:
+
    - Configure your database to store user information, product listings, and transactions.
 
 3. **Run the Application**:
+
    - Start the application by running the server and accessing the platform in your browser.
 
 4. **Admin Verification**:
@@ -74,8 +81,6 @@ To get started with **Second BD**, follow these steps:
 
 For inquiries or support, reach out to:
 
-📧 Email: web.moniruzzaman1@gmail.com
+📧 Email: halder25572@gmail.com
 
-📍 Address: 2100 - Sherpur, Bangladesh
-
-Made with ❤️ by Md Moniruzzaman
+📍 Address: Arjatpara, Mohakhali, Dhaka, Bangladesh
