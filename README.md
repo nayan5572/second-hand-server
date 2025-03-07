@@ -2,7 +2,7 @@
 
 ## Frontend Live Link:
 
-## Backend Live Link:
+## Backend Live Link: https://second-hand-server-seven.vercel.app/
 
 ## Introduction
 
