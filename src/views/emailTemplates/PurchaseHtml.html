@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Purchase Confirmation - Second BD</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ad Purchase Confirmation - puronoBazar</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.5;
-        }
-        .ad-details {
-            margin: 20px 0;
-        }
-        .ad-details p {
-            margin: 8px 0;
-        }
-        .ad-button {
-            display: block;
-            width: 100%;
-            max-width: 220px;
-            padding: 12px;
-            background-color: #537cd9;
-            border: 1px solid #537cd9;
-            color: white !important;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 20px auto;
-        }
-        .footer {
-            text-align: center;
-            font-size: 14px;
-            color: #aaa;
-            margin-top: 30px;
-        }
-        .footer a {
-            color: #537cd9;
-            text-decoration: none;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+      }
+      .ad-details {
+        margin: 20px 0;
+      }
+      .ad-details p {
+        margin: 8px 0;
+      }
+      .ad-button {
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        padding: 12px;
+        background-color: #537cd9;
+        border: 1px solid #537cd9;
+        color: white !important;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 20px auto;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 30px;
+      }
+      .footer a {
+        color: #537cd9;
+        text-decoration: none;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <h1>Ad Purchase Successful!</h1>
-        <p>Hello {{userName}},</p>
-        <p>Congratulations! You have successfully purchased the ad below. Thank you for choosing Second BD!</p>
+      <h1>Ad Purchase Successful!</h1>
+      <p>Hello {{userName}},</p>
+      <p>
+        Congratulations! You have successfully purchased the ad below. Thank you
+        for choosing puronoBazar!
+      </p>
 
-        <div class="ad-details">
-            <p><strong>Ad Title:</strong> {{adTitle}}</p>
-            <p><strong>Condition:</strong> {{condition}}</p>
-            <p><strong>Category:</strong> {{adCategory}}</p>
-            <p><strong>Ad Link:</strong> <a href="{{adLink}}">View your ad</a></p>
-        </div>
+      <div class="ad-details">
+        <p><strong>Ad Title:</strong> {{adTitle}}</p>
+        <p><strong>Condition:</strong> {{condition}}</p>
+        <p><strong>Category:</strong> {{adCategory}}</p>
+        <p><strong>Ad Link:</strong> <a href="{{adLink}}">View your ad</a></p>
+      </div>
 
-        <p>Your purchase has been completed, and you can now view or contact the seller directly from the link above.</p>
+      <p>
+        Your purchase has been completed, and you can now view or contact the
+        seller directly from the link above.
+      </p>
 
-        <a href="{{adLink}}" class="ad-button">View Your Ad</a>
+      <a href="{{adLink}}" class="ad-button">View Your Ad</a>
 
-        <div class="footer">
-            <p>This email was sent by Second BD. If you have any questions or need further assistance, please <a href="https://second-hand-client-dc3y.vercel.app/contact-us">contact support</a>.</p>
-        </div>
+      <div class="footer">
+        <p>
+          This email was sent by puronoBazar. If you have any questions or need
+          further assistance, please
+          <a href="https://second-hand-client-dc3y.vercel.app/contact-us"
+            >contact support</a
+          >.
+        </p>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

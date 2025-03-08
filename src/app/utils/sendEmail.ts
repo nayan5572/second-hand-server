@@ -15,7 +15,7 @@ export const sendEmail = async (
     secure: false,
     auth: {
       user: "halder25572@gmail.com",
-      pass: "vaaj rsoe mppc elde",
+      pass: "jpjk wxcj dzda qmyc",
     },
   });
 

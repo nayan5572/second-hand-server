@@ -1,4 +1,4 @@
-# Second BD - Project Overview
+# puronoBazar - Project Overview
 
 ## Frontend Live Link:
 
@@ -6,7 +6,7 @@
 
 ## Introduction
 
-**Second BD** is a platform that allows users to browse and buy second-hand items in a variety of categories, ranging from electronics to fashion, and much more. The platform provides an easy-to-use interface where users can filter, search, and view products according to their preferences. Additionally, it allows users to register and post ads for items they wish to sell, manage their listings, and interact with other users.
+**puronoBazar** is a platform that allows users to browse and buy second-hand items in a variety of categories, ranging from electronics to fashion, and much more. The platform provides an easy-to-use interface where users can filter, search, and view products according to their preferences. Additionally, it allows users to register and post ads for items they wish to sell, manage their listings, and interact with other users.
 
 ## Features
 
@@ -52,7 +52,7 @@
 
 ## Getting Started
 
-To get started with **Second BD**, follow these steps:
+To get started with **puronoBazar**, follow these steps:
 
 1. **Installation**:
 
