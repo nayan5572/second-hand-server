@@ -1,8 +1,8 @@
 # puronoBazar - Project Overview
 
-## Frontend Live Link:
+## Frontend Live Link: https://second-hand-client-phi.vercel.app
 
-## Backend Live Link: https://second-hand-server-seven.vercel.app/
+## Backend Live Link: https://second-hand-server-fawn.vercel.app/
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 
 ## Features
 
-### User Features
+## User Features
 
 - **Browse Products**: Users can view second-hand items across several product categories, including:
 

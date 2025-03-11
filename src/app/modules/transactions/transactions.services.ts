@@ -41,7 +41,7 @@ const createNewTransaction = async ({
       adTitle: product.title || "No title available",
       condition: product.condition || "Unknown condition",
       adCategory: product.category || "Unknown category",
-      adLink: `https://second-hand-client-dc3y.vercel.app/dashboard/purchase-history`,
+      adLink: `https://second-hand-client-phi.vercel.app/dashboard/purchase-history`,
     };
     await sendEmail(
       authUser.email,
