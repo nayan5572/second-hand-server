@@ -4,9 +4,15 @@ import router from "./app/routes";
 import { notFound } from "./app/middleware/notFound";
 import globalErrorHandler from "./app/middleware/globalErrorHandler";
 import cookieParser from "cookie-parser";
+
 const app: Application = express();
 app.use(express.json());
-app.use(cors({ origin: ["https://second-hand-client-phi.vercel.app"] }));
+app.use(
+  cors({
+    origin: "https://second-hand-client-zeta.vercel.app",
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 
 app.get("/", (req: Request, res: Response) => {

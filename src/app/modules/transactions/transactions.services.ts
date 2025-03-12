@@ -5,7 +5,7 @@ import QueryBuilder from "../../builder/QueryBuilder";
 import { StatusCodes } from "http-status-codes";
 import { Product } from "../products/products.model";
 import mongoose from "mongoose";
-import { sendEmail } from "../../utils/sendEmail";
+// import { sendEmail } from "../../utils/sendEmail";
 
 const createNewTransaction = async ({
   authUser,
@@ -41,14 +41,12 @@ const createNewTransaction = async ({
       adTitle: product.title || "No title available",
       condition: product.condition || "Unknown condition",
       adCategory: product.category || "Unknown category",
-      adLink: `https://second-hand-client-phi.vercel.app/dashboard/purchase-history`,
+      adLink: `https://second-hand-client-zeta.vercel.app/dashboard/purchase-history`,
     };
-    await sendEmail(
-      authUser.email,
-      "Your project available for sell",
-      "PurchaseHtml",
-      replacements
-    );
+    await (authUser.email,
+    "Your project available for sell",
+    "PurchaseHtml",
+    replacements);
   }
 
   return result;

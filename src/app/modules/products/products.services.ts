@@ -10,7 +10,7 @@ import mongoose, { Types } from "mongoose";
 import { JwtPayload } from "jsonwebtoken";
 import { Wishlist } from "../wishlist/wishlist.model";
 import { Transaction } from "../transactions/transactions.model";
-import { sendEmail } from "../../utils/sendEmail";
+// import { sendEmail } from "../../utils/sendEmail";
 
 const createProduct = async (
   productData: Partial<TProduct>,
@@ -31,14 +31,12 @@ const createProduct = async (
     adTitle: productData.title || "No title available",
     condition: productData.condition || "Unknown condition",
     adCategory: productData.category || "Unknown category",
-    adLink: `https://second-hand-client-phi.vercel.app/products/${result._id}`,
+    adLink: `https://second-hand-client-zeta.vercel.app/products/${result._id}`,
   };
-  await sendEmail(
-    authUser.email,
-    "Your project created successfully",
-    "projectCreateHtml",
-    replacements
-  );
+  await (authUser.email,
+  "Your project created successfully",
+  "projectCreateHtml",
+  replacements);
 
   return result;
 };
@@ -214,12 +212,10 @@ const deleteProduct = async (productId: string) => {
       adCategory: product.category || "Unknown category",
     };
     if (user) {
-      await sendEmail(
-        user.email,
-        "Your project has been delete successfully",
-        "deleteAdsHtml",
-        replacements
-      );
+      await (user.email,
+      "Your project has been delete successfully",
+      "deleteAdsHtml",
+      replacements);
     }
 
     await session.commitTransaction();
@@ -252,15 +248,13 @@ const permissionProduct = async (
     adTitle: product.title || "No title available",
     condition: product.condition || "Unknown condition",
     adCategory: product.category || "Unknown category",
-    adLink: `https://second-hand-client-phi.vercel.app/products/${product._id}`,
+    adLink: `https://second-hand-client-zeta.vercel.app/products/${product._id}`,
   };
   if (user) {
-    await sendEmail(
-      user.email,
-      "Your project available for sell",
-      "ApprovedAdds",
-      replacements
-    );
+    await (user.email,
+    "Your project available for sell",
+    "ApprovedAdds",
+    replacements);
   }
 
   return completePermission;

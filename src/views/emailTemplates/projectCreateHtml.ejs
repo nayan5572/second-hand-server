@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Ad Has Been Deleted - puronoBazar</title>
+    <title>Ad Creation - puronoBazar</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -35,6 +35,21 @@
       .ad-details p {
         margin: 8px 0;
       }
+      .ad-button {
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        padding: 12px;
+        background-color: #537cd9;
+        border: 1px solid #537cd9;
+        color: white !important;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 20px auto;
+      }
       .footer {
         text-align: center;
         font-size: 14px;
@@ -49,29 +64,32 @@
   </head>
   <body>
     <div class="container">
-      <h1>Your Ad Has Been Deleted</h1>
-      <p>Hello {{userName}},</p>
+      <h1>Your Ad Created Successfully!</h1>
+      <p>Hello {{ userName }},</p>
       <p>
-        We regret to inform you that your ad has been deleted from puronoBazar.
-        Unfortunately, this ad no longer exists on our platform.
+        Thank you for creating a new ad on puronoBazar. Below are the details of
+        your ad:
       </p>
 
       <div class="ad-details">
-        <p><strong>Ad Title:</strong> {{adTitle}}</p>
-        <p><strong>Condition:</strong> {{condition}}</p>
-        <p><strong>Category:</strong> {{adCategory}}</p>
+        <p><strong>Ad Title:</strong> {{ adTitle }}</p>
+        <p><strong>Condition:</strong> {{ condition }}</p>
+        <p><strong>Category:</strong> {{ adCategory }}</p>
+        <p><strong>Ad Link:</strong> <a href="{{ adLink }}">View your ad</a></p>
       </div>
 
       <p>
-        If you believe this was done in error or would like to get further
-        clarification, please don't hesitate to reach out to our support team.
+        If everything looks good, you're all set! If you'd like to make any
+        changes, you can always visit the link above to update your ad.
       </p>
+
+      <a href="{{ adLink }}" class="ad-button">View Your Ad</a>
 
       <div class="footer">
         <p>
           This email was sent by puronoBazar. If you have any questions or need
           further assistance, please
-          <a href="https://second-hand-client-phi.vercel.app/contact-us"
+          <a href="https://second-hand-client-zeta.vercel.app/contact-us"
             >contact support</a
           >.
         </p>

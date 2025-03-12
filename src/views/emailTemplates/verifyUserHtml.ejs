@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Reset - puronoBazar</title>
+    <title>Email Verification - PuronoBazar</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -29,7 +29,7 @@
         color: #555;
         line-height: 1.5;
       }
-      .reset-button {
+      .verify-button {
         display: block;
         width: 100%;
         max-width: 220px;
@@ -58,24 +58,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>Password Reset Request</h1>
-      <p>Hello {{userName}},</p>
+      <h1>Email Verification Request</h1>
+      <p>Hello <%= userName %>,</p>
       <p>
-        We have received a request to reset your password for your account at
-        puronoBazar. If this was you, please click the button below to reset
-        your password.
+        Thank you for registering with PuronoBazar. To complete your
+        registration, please verify your email address by clicking the button
+        below.
       </p>
-      <a href="{{resetLink}}" class="reset-button">Reset Your Password</a>
+      <a href="<%= verificationLink %>" class="verify-button"
+        >Verify Your Email</a
+      >
       <p>
-        If you did not request a password reset, please ignore this email. Your
-        account remains secure.
+        If you did not create an account with us, please ignore this email. Your
+        account will not be activated without verification.
       </p>
 
       <div class="footer">
         <p>
-          This email was sent by puronoBazar. If you have any questions or need
+          This email was sent by PuronoBazar. If you have any questions or need
           further assistance, please
-          <a href="https://second-hand-client-phi.vercel.app/contact-us"
+          <a href="https://second-hand-client-zeta.vercel.app/contact-us"
             >contact support</a
           >.
         </p>

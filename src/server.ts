@@ -3,13 +3,12 @@ import { Server } from "http";
 import app from "./app";
 import config from "./app/config";
 
-let server: Server;
+let server: Server | null = null;
 
+// Database connection
 async function main() {
   try {
-    await mongoose.connect(
-      "mongodb+srv://admin-um:admin12345678@cluster0.wlyyget.mongodb.net/ph-seceond?retryWrites=true&w=majority&appName=Cluster0"
-    );
+    await mongoose.connect(config.database_url as string);
     server = app.listen(config.port, () => {
       console.log(`Example app listening: ${config.port}`);
     });
